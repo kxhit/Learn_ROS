@@ -1,8 +1,0 @@
-prefix=/home/kx/catkin_ws/install
-
-Name: foobar
-Description: Description of foobar
-Version: 1.2.4
-Cflags: 
-Libs: -L/home/kx/catkin_ws/install/lib 
-Requires: 

@@ -1,4 +1,0 @@
-<launch>
-    <node name="cmdControl" pkg="tcp2ros" type="cmdControl.py"  />
-    <node name="readData" pkg="tcp2ros" type="readData.py" />
-</launch>

@@ -1,6 +1,0 @@
-<launch>
-	<include file="$(find tcp2ros)/launch/my_Car.launch" />
-	<include file="$(find tcp2ros)/launch/tcp2ros.launch" />
-	<include file="$(find tcp2ros)/launch/myCar1.launch" />
-
-</launch>
