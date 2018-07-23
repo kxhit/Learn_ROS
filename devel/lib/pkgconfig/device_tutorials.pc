@@ -1,8 +1,0 @@
-prefix=/home/kx/catkin_ws/devel
-
-Name: device_tutorials
-Description: Description of device_tutorials
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/kx/catkin_ws/devel/lib 
-Requires: 
