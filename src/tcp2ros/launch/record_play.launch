@@ -1,0 +1,6 @@
+<launch>
+
+    <node name="car_play" pkg="tcp2ros" type="car_play.py" output="screen" />
+    <node name="car_record" pkg="tcp2ros" type="car_record_control" output="screen" />
+
+</launch>

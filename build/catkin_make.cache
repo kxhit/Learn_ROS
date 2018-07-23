@@ -1,0 +1,2 @@
+beginner_tutorials:device_tutorials:foobar:learning_joy:point_cloud:tcp2ros
+-DCMAKE_BUILD_TYPE=Debug -DCATKIN_DEVEL_PREFIX=/home/kx/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/kx/catkin_ws/install -G Unix Makefiles

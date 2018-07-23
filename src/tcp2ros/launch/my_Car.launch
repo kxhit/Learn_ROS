@@ -1,0 +1,24 @@
+<launch>
+    <node name="carDriver" pkg="tcp2ros" type="carDriver" output="screen">
+    	<param name="a" type="double" value="0.38" />
+	<param name="b" type="double" value="0.36" />
+	<param name="p" type="double" value="8370" />
+    </node>
+
+    <node pkg="tcp2ros" type="odom_imu_gps.py" name="odom_imu_gps" />
+
+    <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0.60 0 0.3 0 0 0 1 base_link base_laser_link 100" />
+    <node name="joy" pkg="joy" type="joy_node"  /> 
+    
+    <node name="joystick_pre" pkg="tcp2ros" type="joystick_driver2" output="screen"/>
+    <node name="ub31" pkg="ub31" type="ub31"  output="screen" />
+    
+    <node name="path_publish" pkg="tcp2ros" type="path_publish"  output="screen" />
+    <node name="pub_map_pose" pkg="tcp2ros" type="pub_map_pose"  output="screen" />
+    <include file="$(find xsens_driver)/launch/xsens_driver.launch" />
+    <!-- <include file="$(find urg_node)/launch/urg_lidar.launch" /> -->
+
+    <node name="readGPS_modify" pkg="tcp2ros" type="readGPS_modify.py" />
+    <!-- <node name="LaserProcess" pkg="tcp2ros" type="LaserProcess.py" output="screen" /> -->
+    <node name="laser_node" pkg="laser_node" type="laser_node" output="screen" />
+</launch>

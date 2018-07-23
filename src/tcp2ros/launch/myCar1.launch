@@ -1,0 +1,6 @@
+<launch>
+
+    <node pkg="tcp2ros" type="FunctionAll_shenyang_modify.py" name="FunctionAll_shenyang_modify" output="screen" />
+    <node pkg="tcp2ros" type="LaserProcess_new_filter_new.py" name="LaserProcess_new_filter_new"  />
+    <node pkg="tcp2ros" type="laser_search.py" name="laser_search" />
+</launch>
